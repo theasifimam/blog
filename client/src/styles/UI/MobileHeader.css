@@ -1,0 +1,50 @@
+.mobile-header {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .mobile-header {
+        height: 60px;
+        border-radius: 50px;
+        position: fixed;
+        bottom: 10px;
+        left: 1.5%;
+        z-index: 999999;
+        width: 97%;
+        background: #000000b0;
+        backdrop-filter: blur(10px);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0 2rem; */
+    }
+
+    .mobile-header a i {
+        color: rgb(194, 194, 194);
+        font-size: 1.5rem;
+    }
+
+    .mobile-header a {
+        text-decoration: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mobile-header a.active,
+    .mobile-header a:hover,
+    .mobile-header a.active i,
+    .mobile-header a:hover i {
+        background: white;
+        color: black;
+        transition: 200ms ease-in-out;
+    }
+
+
+}

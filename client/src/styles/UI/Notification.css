@@ -1,0 +1,69 @@
+.darkbg {
+  width: 100%;
+  height: 100vh;
+  background: #0000000c;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  /* backdrop-filter: blur(1px); */
+}
+
+.notification-popup {
+  width: 400px;
+  border-radius: 20px;
+  /* border: 2px solid black; */
+  background: white;
+  padding: 1rem;
+  position: fixed;
+  top: 90px;
+  right: 100px;
+  box-shadow: var(--shadow);
+}
+
+.nots-container .notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.nots-container {
+  overflow: auto;
+  max-height: 90vh;
+}
+
+.nots-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.nots-container .notice:hover {
+  transition: 200ms ease-in-out;
+  background: rgb(242, 242, 242);
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.nots-container .notice .dp {
+  width: 60px;
+  height: 60px;
+}
+
+.nots-container .notice .info {
+  width: calc(100% - 70px);
+}
+
+.nots-container .notice .info p {
+  color: grey;
+  font-size: 14px;
+}
+
+.nots-container .notice .info span {
+  font-size: 12px;
+  display: inline-block;
+  width: 90%;
+  color: rgb(174, 174, 174);
+  text-align: right;
+}

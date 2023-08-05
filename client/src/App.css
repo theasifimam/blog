@@ -1,0 +1,169 @@
+.primary-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  font-weight: 700;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.primary-btn:hover {
+  background: rgb(247, 247, 247);
+  cursor: pointer;
+  color: black;
+  transition: 200ms ease-in-out;
+}
+
+.secondary-btn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 150px;
+  font-weight: 700;
+  border: 2px solid black;
+}
+
+.secondary-btn:hover {
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  text-align: center;
+}
+
+.dropdown span {
+  height: 100%;
+}
+
+.program-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  column-gap: 10px;
+  padding-top: 10px;
+}
+
+.program-menu span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.dropdown span ul::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -0.5rem;
+  right: 6rem;
+  z-index: -1;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.dropdown span ul {
+  position: absolute;
+  right: -4.7rem;
+  top: 3rem;
+  z-index: 13221;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 12rem;
+  list-style: none;
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+
+.dropdown span ul li {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dropdown span ul li a {
+  padding: 10px 20px !important;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(14px);
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dropdown span ul li {
+  backdrop-filter: blur(14px);
+  background-color: #00000051;
+}
+
+.dropdown span ul li:hover {
+  background-color: #00000057;
+  transition: 200ms ease-in-out;
+  backdrop-filter: blur(14px);
+}
+
+@media screen and (max-width: 1181px) {
+  .program-menu {
+    margin-right: 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+/* 404 no page found */
+.no-page-found {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 97%;
+  background: white;
+  padding: 2rem;
+  min-height: 500px;
+}
+
+.no-page-found h1 {
+  font-weight: 700;
+  font-size: 7rem;
+  color: rgb(25, 25, 25);
+  line-height: 10rem;
+}
+
+.no-page-found span {
+  font-weight: 500;
+  font-size: 2rem;
+  color: rgb(90, 90, 90);
+  line-height: 5rem;
+  margin-top: 2rem;
+}
+
+.no-page-found .btn-group a {
+  text-decoration: none;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

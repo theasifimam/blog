@@ -1,0 +1,246 @@
+.profile-container {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container>.top {
+  width: 97%;
+}
+
+.profile-container .top .cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  border-radius: 20px;
+}
+
+.profile-container .top .name-n-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.profile-container .top .name-n-all .profile-picture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -100px;
+  margin-left: 50px;
+  box-shadow: var(--shadow);
+  border: 5px solid white;
+}
+
+.profile-container .top .name-n-all .profile-picture img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.profile-container .top .name-n-all .names {
+  width: 40%;
+}
+
+.profile-container .top .name-n-all .names .name {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-container .top .name-n-all .names .username {
+  font-size: 1.3rem;
+  color: rgb(78, 78, 78);
+  margin-top: -5px;
+}
+
+.profile-container .top .name-n-all .names .short-desc {
+  width: 90%;
+  color: grey;
+  line-height: 16px;
+}
+
+.count {
+  color: grey;
+}
+
+.count span {
+  /* margin-right: 1rem; */
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  padding-right: 5px;
+}
+
+.count span.followings {
+  margin-left: 1rem;
+}
+
+.option-btn {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.option-btn .secondary-btn {
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.option-btn .primary-btn {
+  border-radius: 50px;
+  margin: 0;
+}
+
+.profile-container>.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  margin-top: 1rem;
+}
+
+.profile-container>.bottom>.left.about {
+  width: 30%;
+  /* border: 2px solid black; */
+  background: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 20px;
+  padding: 1rem;
+  height: fit-content;
+  overflow: auto;
+  position: sticky;
+  top: 100px;
+  left: 0;
+}
+
+.profile-container>.bottom>.left.about .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+
+.profile-container>.bottom>.left.about .header button {
+  all: unset;
+  cursor: pointer;
+}
+
+.profile-container>.bottom>.left.about h2 {
+  font-size: 2rem;
+  color: rgb(86, 86, 86);
+}
+
+.profile-container>.bottom>.left.about p.about-para {
+  text-align: center;
+}
+
+.profile-container>.bottom>.left.about p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: grey;
+  line-height: 1.2rem;
+}
+
+.profile-container>.bottom>.left.about p span {
+  font-weight: 600;
+}
+
+.profile-container>.bottom>.left.about hr {
+  margin: 1rem 0;
+  color: rgb(211, 211, 211);
+}
+
+.profile-container>.bottom>.right {
+  width: 68%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.profile-navbar {
+  width: 100%;
+  display: flex;
+  background: white;
+  justify-content: flex-start;
+  align-content: center;
+  column-gap: 1rem;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 45px;
+}
+
+.profile-navbar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  color: grey;
+  height: 100%;
+}
+
+.profile-navbar a.active,
+.profile-navbar a:hover {
+  background: black;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-container .top .cover {
+    min-height: 250px;
+  }
+
+  .profile-container .top .name-n-all {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+
+  .profile-container .top .name-n-all .names {
+    text-align: center;
+    width: 100%;
+  }
+
+  .option-btn {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .profile-container .top .name-n-all .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-container>.bottom {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .profile-container>.bottom>.left.about {
+    position: static;
+    width: 97%;
+  }
+
+  .profile-container>.bottom>.right {
+    width: 97%;
+  }
+
+  .profile-navbar {
+    width: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+    .header {
+        /* position: fixed !important;
+        top: calc(100vh - 70px) !important;
+        width: 100%;
+        z-index: 5;
+        height: 60px !important;
+        border-radius: 50px;
+        width: 97%;
+        background: #00000063 !important; */
+        display: none !important;
+    }
+
+    .no-page-found h1 {
+        font-size: 4rem !important;
+        line-height: 4.1rem !important;
+        text-transform: uppercase;
+    }
+
+    /* .header::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header .left {
+        display: none !important;
+    } */
+
+    .posts-container {
+        width: 97% !important;
+    }
+
+    .post-preview {
+        width: 100% !important;
+    }
+
+}

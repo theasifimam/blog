@@ -1,0 +1,153 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 1200px;
+  padding-top: 3rem;
+}
+
+.post-container>.top.heading>h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  line-height: 4.2rem;
+  text-align: justify;
+}
+
+.post-container .blog-image {
+  width: 100%;
+  min-height: 400px;
+  max-height: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.post-container .blog-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.post-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.post-container .info .dp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.post-container .info .left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: gray;
+  height: 100%;
+}
+
+.post-container .info .dp img {
+  width: 100%;
+  height: 100%;
+}
+
+.post-container .info .name-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0px;
+  height: 100%;
+}
+
+.post-container .info .name-date .name {
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+
+.post-container .info .name-date .date {
+  font-size: 1rem;
+  color: grey;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.post-container .info .name-date span {
+  color: black;
+  display: inline-block;
+}
+
+.post-container .info .share-handles i {
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+}
+
+.post-container .short-description {
+  padding: 0 2rem;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.post-container .description {
+  padding: 2rem;
+}
+
+.post-container .description p {
+  margin: 1rem 0;
+  color: rgb(70, 70, 70);
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 768px) {
+  .post-container {
+    width: 97%;
+    display: flex;
+    /* align-items: center; */
+    padding-top: 0;
+  }
+
+  .post-container>.top.heading>h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .post-container .blog-image {
+    min-height: 200px;
+    max-height: none;
+  }
+
+  .post-container .short-description {
+    padding: 1rem;
+  }
+
+  .post-container .description {
+    padding: 1rem;
+  }
+
+
+
+  .post-container .info {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 0;
+    row-gap: 1rem;
+  }
+
+  .social-link {
+    justify-content: center;
+  }
+
+
+  .post-preview {
+    width: 100%;
+  }
+
+}

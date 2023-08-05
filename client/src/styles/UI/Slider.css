@@ -1,0 +1,77 @@
+.hero-slider {
+    min-height: 500px;
+    /* min-height: 90vh; */
+    width: 97%;
+    border-radius: 20px;
+    max-width: 1800px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgba(255, 255, 255, 0.037);
+}
+
+.hero-slider .slide {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 3rem 3rem;
+    min-height: 600px;
+}
+
+.hero-slider .slide>.tag {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.hero-slider .slide>.heading {
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.2rem;
+}
+
+.hero-slider .slide>.description {
+    width: 70%;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .hero-slider {
+        min-height: 440px;
+        max-height: none;
+    }
+
+    .hero-slider .slide {
+        padding: 1rem;
+        min-height: 400px;
+        max-height: none;
+        border-radius: 20px;
+    }
+
+    .swiper-pagination {
+        color: grey;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+
+
+    .hero-slider .slide>.heading {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin: 0;
+    }
+
+    .hero-slider .slide .description {
+        font-size: 14px;
+        line-height: 16px;
+        width: 100%;
+    }
+}
